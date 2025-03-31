@@ -1,0 +1,226 @@
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container,
+.container-fluid {
+  --bs-gutter-x: 0;
+}
+
+
+.sidebar {
+  height: 100vh;
+  background: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar .nav-link {
+  display: flex;
+  align-items: center;
+  color: #e9e9e9;
+  padding: 10px 18px;
+  font-size: clamp(8px, 1vw, 16px);
+  transition: background 0.3s ease, transform 0.2s ease;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .sidebar .nav-link {
+    font-size: 16px;
+  }
+}
+
+.sidebar .nav-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(2px);
+}
+
+.sidebar .nav-link.active {
+  background-color: #7900db;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0px 0px 8px rgba(121, 0, 219, 0.5);
+}
+
+.sidebar .nav-link svg {
+  margin-right: 12px;
+  font-size: 1.4em;
+}
+
+
+.text-primary {
+  color: #7900db !important;
+}
+
+.btn-primary {
+  background-color: #7900db !important;
+  border-color: #7900db !important;
+}
+
+.btn-link {
+  color: #7900db !important;
+}
+
+.form-check-input:checked {
+  background-color: #7900db !important;
+  border-color: #7900db !important;
+}
+
+.text-decoration-none {
+  color: #7900db !important;
+}
+
+
+.form-switch .form-check-input {
+  width: 4em !important;
+  height: 2em;
+}
+
+label.form-check-label {
+  padding: 0.5em !important;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.mx-2 {
+  margin-right: 0 !important;
+}
+
+img,
+svg {
+  color: #7900db !important;
+}
+
+.nav-item .nav-link svg {
+  color: #e9e9e9 !important;
+  fill: #e9e9e9 !important;
+  stroke: #e9e9e9 !important;
+}
+
+.btn-close {
+  background-color: white;
+}
+
+
+
+.dropdown-item {
+  color: white !important;
+
+}
+
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  background-color: #7900db;
+}
+
+.input-group {
+  flex-wrap: nowrap !important;
+}
+
+.form-switch.form-check-reverse {
+  padding-right: 0;
+}
+
+.downarrow {
+  color: #c72927 !important;
+}
+
+.botharrow {
+  color: #e7a17d !important;
+}
+
+.uparrow {
+  color: #00ba4e !important;
+}
+
+
+.react-datepicker__day--keyboard-selected,
+.react-datepicker__month-text--keyboard-selected,
+.react-datepicker__quarter-text--keyboard-selected,
+.react-datepicker__year-text--keyboard-selected {
+  background-color: #9262b9 !important;
+}
+
+
+.react-datepicker__day--selected,
+.react-datepicker__day--in-selecting-range,
+.react-datepicker__day--in-range,
+.react-datepicker__month-text--selected,
+.react-datepicker__month-text--in-selecting-range,
+.react-datepicker__month-text--in-range,
+.react-datepicker__quarter-text--selected,
+.react-datepicker__quarter-text--in-selecting-range,
+.react-datepicker__quarter-text--in-range,
+.react-datepicker__year-text--selected,
+.react-datepicker__year-text--in-selecting-range,
+.react-datepicker__year-text--in-range {
+  border-radius: 0.3rem;
+  background-color: #7900db !important;
+  color: #fff;
+}
+
+.icon-login-btn {
+  font-size: clamp(12px, 1vw, 16px);
+}
+
+
+
+.scale-down {
+  width: 1400px;
+  margin: auto;
+}
+
+@media (max-width: 375px) {
+  .scale-down {
+    transform: scale(0.2);
+    transform-origin: left top;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 430px) {
+  .scale-down {
+    transform: scale(0.23);
+    transform-origin: left top;
+  }
+}
+
+@media (min-width: 431px) and (max-width: 768px) {
+  .scale-down {
+    transform: scale(0.33);
+    transform-origin: left top;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  .scale-down {
+    transform: scale(0.43);
+    transform-origin: left top;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .scale-down {
+    transform: scale(0.5);
+    transform-origin: left top;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .scale-down {
+    transform: scale(0.6);
+    transform-origin: left top;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1920px) {
+  .scale-down {
+    transform: scale(1);
+    transform-origin: left top;
+  }
+}
