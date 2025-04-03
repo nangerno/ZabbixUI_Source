@@ -7,17 +7,17 @@ const CallForwardContainer = () => {
     const formatPhoneNumber = (value) => {
         const input = value.replace(/\D/g, "");
         let formattedNumber = "";
-    
+
         if (input.length > 0) {
-          formattedNumber += `(${input.substring(0, 3)}`;
+            formattedNumber += `(${input.substring(0, 3)}`;
         }
         if (input.length > 3) {
-          formattedNumber += `) ${input.substring(3, 6)}`;
+            formattedNumber += `) ${input.substring(3, 6)}`;
         }
         if (input.length > 6) {
-          formattedNumber += `-${input.substring(6, 10)}`;
+            formattedNumber += `-${input.substring(6, 10)}`;
         }
-    
+
         return formattedNumber;
     };
 
@@ -36,8 +36,8 @@ const CallForwardContainer = () => {
                     className="mb-3"
                 >
                     <Tab className="p-4" eventKey="general" title="General">
-                    <Row className="align-items-center" style={{ borderBottom: '1px solid #ddd' }}>
-                            <Col xs={12} md={3}>
+                        <Row className="align-items-center" style={{ borderBottom: '1px solid #ddd' }}>
+                            <Col xs={12} sm={12} md={6} lg={6} xl={3}>
                                 <InputGroup className="mb-3">
                                     <Form.Check
                                         type="switch"
@@ -48,7 +48,7 @@ const CallForwardContainer = () => {
                                 </InputGroup>
                                 <p>Forward all calls to the specific destination.</p>
                             </Col>
-                            <Col xs={12} md={3}>
+                            <Col xs={12} sm={12} md={6} lg={6} xl={3}>
                                 <InputGroup className="mb-3">
                                     <Form.Control
                                         placeholder="(XXX) XXX-XXXX"
@@ -56,7 +56,7 @@ const CallForwardContainer = () => {
                                         aria-describedby="basic-addon1"
                                         value={number}
                                         onChange={handleChange}
-                                        maxLength={14} 
+                                        maxLength={14}
                                     />
                                 </InputGroup>
                             </Col>

@@ -23,7 +23,7 @@ const Sidebar = ({ activeItem, setActiveItem, handleLogout }) => {
     <div className="d-flex flex-column h-100">
       <Nav className="flex-column bg-dark sidebar flex-grow-1">
         <Navbar.Brand href="#">
-          <img className="p-3" src="logo-title.png" alt="Logo"
+          <img className="p-3 logo-image" src="logo-title.png" alt="Logo"
             style={{ width: "100%", objectFit: "contain" }}
           />
         </Navbar.Brand>

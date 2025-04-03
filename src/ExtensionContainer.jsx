@@ -16,7 +16,7 @@ const ExtensionContainer = () => {
   const [editID, setEditID] = useState(null);
   const [show, setShow] = useState(false);
 
-  
+
 
   const handleClose = () => setShow(false);
   const handleShow = (ext) => {
@@ -45,7 +45,7 @@ const ExtensionContainer = () => {
         >
           <Tab className="p-4" eventKey="general" title="General">
             <Row className="mb-3 g-2">
-              <Col xs={12} sm={6} md={3}>
+              <Col xs={12} sm={4} md={4} lg={4} xl={2}>
                 <InputGroup>
                   <InputGroup.Text>
                     <FaSearch />
@@ -57,14 +57,14 @@ const ExtensionContainer = () => {
                   />
                 </InputGroup>
               </Col>
-              <Col xs={12} sm={6} md={2}>
+              <Col xs={12} sm={4} md={4} lg={4} xl={2}>
                 <Form.Select aria-label="Select Voicemail">
                   <option value="0">Voicemail</option>
                   <option value="1">DND</option>
                 </Form.Select>
               </Col>
 
-              <Col xs={12} sm={6} md={2}>
+              <Col xs={12} sm={4} md={4} lg={4} xl={2}>
                 <Form.Select aria-label="Select DND">
                   <option value="0">DND</option>
                   <option value="1">Voicemail</option>
@@ -76,13 +76,13 @@ const ExtensionContainer = () => {
               <Table striped bordered hover responsive>
                 <thead>
                   <tr>
-                    <th style={{width:"10%"}}>Ext. Number</th>
-                    <th style={{width:"20%"}}>Ext. Name</th>
-                    <th style={{width:"20%"}}>Email Address</th>
-                    <th style={{width:"20%"}}>Public Caller ID</th>
-                    <th style={{width:"10%"}}>Voicemail</th>
-                    <th style={{width:"10%"}}>DND</th>
-                    <th style={{width:"10%"}}></th>
+                    <th style={{ width: "10%" }}>Ext. Number</th>
+                    <th style={{ width: "20%" }}>Ext. Name</th>
+                    <th style={{ width: "20%" }}>Email Address</th>
+                    <th style={{ width: "20%" }}>Public Caller ID</th>
+                    <th style={{ width: "10%" }}>Voicemail</th>
+                    <th style={{ width: "10%" }}>DND</th>
+                    <th style={{ width: "10%" }}></th>
                   </tr>
                 </thead>
                 <tbody>

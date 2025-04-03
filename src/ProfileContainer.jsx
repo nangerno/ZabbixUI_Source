@@ -33,68 +33,74 @@ const ProfileContainer = () => {
             >
                 <Tab eventKey="general" title="General">
                     <Row className="mb-3">
-                        <Col lg={3}>
-                            <Form.Group className="d-flex align-items-center">
-                                <Form.Label column className="p-2" style={{ whiteSpace: 'nowrap' }}>
-                                    Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                </Form.Label>
-
-                                <Form.Control
-                                    type="text"
-                                    id="nameInput"
-                                    placeholder="Albert Pangan"
-                                    className="form-control"
-                                />
-                            </Form.Group>
-
+                        <Col xl={12} lg={12} md={12} sm={12} xs={12}>
+                            <Row>
+                                <Col xl={4} lg={6} md={12} sm={12} xs={12}>
+                                    <Form.Group className="d-flex align-items-center">
+                                        <Form.Label column className="p-2" style={{ whiteSpace: 'nowrap' }}>
+                                            Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        </Form.Label>
+                                        <Form.Control
+                                            type="text"
+                                            id="nameInput"
+                                            placeholder="Albert Pangan"
+                                            className="form-control"
+                                        />
+                                    </Form.Group>
+                                </Col>
+                                <Col xl={8} lg={6} md={12} sm={12} xs={12}></Col>
+                            </Row>
+                        </Col>
+                        <Col xl={12} lg={12} md={12} sm={12} xs={12}>
+                            <Row className="pt-2">
+                                <Col xl={4} lg={6} md={12} sm={12} xs={12}>
+                                    <Form.Group className="d-flex align-items-center">
+                                        <Form.Label column className="p-2" style={{ textWrap: 'nowrap' }}>
+                                            Email Address
+                                        </Form.Label>
+                                        <Form.Control
+                                            type="text"
+                                            id="nameInput"
+                                            placeholder="albert@tranparentvoip.com"
+                                            className="form-control"
+                                        />
+                                    </Form.Group>
+                                </Col>
+                                <Col xl={8} lg={6} md={12} sm={12} xs={12}>
+                                    <div className="d-flex gap-3 p-2 align-items-center">
+                                        <a href="#manageLinkedAccounts" className="text-decoration-none text-primary">
+                                            Manage linked accounts
+                                        </a>
+                                        <SiApple size={24} className="text-muted" />
+                                        <FcGoogle size={24} className="text-muted" />
+                                        <CgMicrosoft size={24} className="text-muted" />
+                                    </div>
+                                </Col>
+                            </Row>
                         </Col>
                     </Row>
-                    <hr style={{ width: '80%', color: "#ddd" }} />
-                    <Row className="mb-3">
-                        <Col lg={3}>
-                            <Form.Group className="d-flex align-items-center">
-                                <Form.Label column className="p-2" style={{ textWrap: 'nowrap' }}>
-                                    Email Address
+                    <Row>
+                        <Col xl={6} lg={12} md={12} sm={12} xs={12}>
+                            <Form.Group className="mb-3 p-2">
+                                <Form.Label htmlFor="logs" className="text-muted">
+                                    Logs
                                 </Form.Label>
                                 <Form.Control
-                                    type="text"
-                                    id="nameInput"
-                                    placeholder="albert@tranparentvoip.com"
-                                    className="form-control"
+                                    as="textarea"
+                                    id="logs"
+                                    placeholder="All Logs here"
+                                    value={logText}
+                                    rows={10}
+                                    readOnly
+                                    onFocus={(e) => e.target.blur()}
+                                    className="form-control log-textarea"
+                                    style={{ resize: "none" }}
                                 />
+
                             </Form.Group>
                         </Col>
-                        <Col lg={4} md={12} className="d-flex align-items-center justify-content-start" style={{ paddingTop: '10px' }}>
-
-                            <div className="d-flex gap-3">
-                                <a href="#manageLinkedAccounts" className="text-decoration-none text-primary">
-                                    <p>Manage linked accounts</p>
-                                </a>
-                                <SiApple size={24} className="text-muted" />
-                                <FcGoogle size={24} className="text-muted" />
-                                <CgMicrosoft size={24} className="text-muted" />
-                            </div>
-                        </Col>
+                        <Col xl={6} lg={12} md={12} sm={12} xs={12}></Col>
                     </Row>
-
-                    <hr style={{ width: '80%', color: "#ddd" }} />
-                    <Form.Group className="mb-3">
-                        <Form.Label htmlFor="logs" className="text-muted">
-                            Logs
-                        </Form.Label>
-                        <Form.Control
-                            as="textarea"
-                            id="logs"
-                            placeholder="All Logs here"
-                            value={logText}
-                            rows={15}
-                            readOnly
-                            onFocus={(e) => e.target.blur()}
-                            className="form-control log-textarea"
-                            style={{ width: '100%', maxWidth: '800px', marginLeft: '50px', marginRight: '50px', marginTop:'-30px', padding: 'auto', maxHeight: '400px', minHeight:'400px'}}
-                        />
-
-                    </Form.Group>
                 </Tab>
             </Tabs>
         </div>

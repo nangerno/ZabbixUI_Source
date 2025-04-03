@@ -65,15 +65,15 @@ const OperatingHoursContainer = () => {
                 >
                     <Tab className="p-4" eventKey="general" title="General">
                         <Row className="align-items-center mb-3 g-2">
-                            <Col xs={12} md={3}>
+                            <Col xs={12} sm={12} md={12} lg={12} xl={3}>
                                 <h5>Holiday Hours</h5>
                                 <p>Apply holiday hours to override normal operating hours</p>
                             </Col>
-                            <Col xs={12} md={3} className="d-flex justify-content-md-start">
+                            <Col xs={12} sm={12} md={12} lg={12} xl={3} className="d-flex justify-content-md-start">
                                 <Button variant="primary" onClick={() => handleAddData()}>Add Holidays</Button>
                             </Col>
-                            <Col xs={12} md={3}></Col>
-                            <Col xs={12} md={3}></Col>
+                            <Col xs={12} sm={12} md={0} lg={0} xl={3}></Col>
+                            <Col xs={12} sm={12} md={0} lg={0} xl={3}></Col>
                         </Row>
                         <div className="table-responsive">
                             <Table className="mt-3" striped bordered hover responsive>

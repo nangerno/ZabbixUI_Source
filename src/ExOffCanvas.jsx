@@ -186,20 +186,20 @@ const ExOffCanvas = ({ extensionData, show, handleClose, handleSave }) => {
               <option value="3">Three</option>
             </Form.Select>
             {isPlaying ? (
-                <TbPlayerPause className="mx-2" onClick={() => setIsPlaying(false)} />
+              <TbPlayerPause className="mx-2" onClick={() => setIsPlaying(false)} />
             ) : (
-                <FaPlay className="mx-2" onClick={() => setIsPlaying(true)} />
+              <FaPlay className="mx-2" onClick={() => setIsPlaying(true)} />
             )}
           </InputGroup>
-          {isPlaying&&
-          (<Form.Range 
-            min={0}
-            max={100}
-            step={0.1}
-            value={seedValue}
-            onChange={handleChangeSeedValue}
-          />)}
-          
+          {isPlaying &&
+            (<Form.Range
+              min={0}
+              max={100}
+              step={0.1}
+              value={seedValue}
+              onChange={handleChangeSeedValue}
+            />)}
+
           <Row className="justify-content-center g-3">
             <Col xs={12} sm="auto" className="text-center">
               <a href="#recordAudio" className="text-decoration-none">Record Audio</a>

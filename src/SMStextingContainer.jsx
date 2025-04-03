@@ -22,7 +22,7 @@ const EditableText = ({ initialText }) => {
                     onChange={handleChange}
                     onBlur={handleBlur}
                     rows={5}
-                    onKeyDown={(e) => e.key === "Enter" && handleBlur()} // Save on Enter
+                    onKeyDown={(e) => e.key === "Enter" && handleBlur()}
                     style={{ width: "100%", minHeight: "60px", border: "1px solid #ccc", borderRadius: "5px" }}
                 />
             ) : (
@@ -39,20 +39,20 @@ const SMSTextingContainer = () => {
             <Tabs activeKey="general" defaultActiveKey="profile" id="sms-tabs" className="mb-3">
                 <Tab className="p-4" eventKey="general" title="General">
                     <Row>
-                        <Col xl={3} lg={4} md={12} sm={12}>
+                        <Col xl={3} lg={12} md={12} sm={12} xs={12}>
                             <InputGroup className="mb-3">
                                 <Form.Check type="switch" id="automatic-reply" label="Automatic Reply" reverse />
                             </InputGroup>
                         </Col>
-                        <Col xl={9} lg={8} md={12} sm={12}>
-                            <Card style={{ width: '22rem' }}>
+                        <Col xl={3} lg={12} md={12} sm={12} xs={12}>
+                            <Card>
                                 <Card.Body>
                                     <EditableText initialText="Hello, we missed your call and would love to assist you. Please let us know a convenient time to connect. Looking forward to speaking with you!" />
                                 </Card.Body>
                             </Card>
                         </Col>
-                        <Col></Col>
-                        <Col></Col>
+                        <Col xl={3} lg={12} md={12} sm={12} xs={12}></Col>
+                        <Col xl={3} lg={12} md={12} sm={12} xs={12}></Col>
                     </Row>
                 </Tab>
             </Tabs>
