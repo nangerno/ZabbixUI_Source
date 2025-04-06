@@ -166,7 +166,7 @@ svg {
 }
 
 .icon-login-btn {
-  font-size: clamp(12px, 1vw, 16px);
+  font-size: clamp(10px, 1vw, 16px);
 }
 
 
